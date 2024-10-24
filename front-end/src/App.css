@@ -1,26 +1,33 @@
-
-body{
-  
+body {
+  color: #333;
 }
 
-
-main{
-padding: 10px;
-max-width: 500px;
-margin: 0 auto;
+main {
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-header{
+header {
+  border: solid black 2px;
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  align-items: center;
 }
-header a{
+header a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
+header a.logo {
+  font-weight: bold;
+}
 
-
-
-
-
+header nav {
+  border: solid 2px red;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}

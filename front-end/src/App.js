@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
         </a>
         <nav>
           <a href="" className="">
-              Login
+            Login
           </a>
           <a href="">Register</a>
         </nav>
