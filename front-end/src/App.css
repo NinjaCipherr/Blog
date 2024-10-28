@@ -1,6 +1,9 @@
 body {
   color: #333;
 }
+img {
+  max-width: 100%;
+}
 
 main {
   padding: 10px;
@@ -23,11 +26,14 @@ header a {
 
 header a.logo {
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 header nav {
   border: solid 2px red;
   display: flex;
-  gap: 15px;
+  gap: 24px;
   justify-content: space-between;
+}
+div.post {
 }
