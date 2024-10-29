@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   color: #333;
 }
@@ -66,4 +69,33 @@ div.posts p.summary {
   margin: 10px 0;
   line-height: 1.3rem;
   /* toi can cho cac hang co khoang cach 1.3rem cho to */
+}
+form.login,
+form.register {
+  border: 2px red solid;
+  max-width: 400px;
+  margin: auto;
+}
+
+input {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 5px 10px;
+  border: 2px solid#ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+button {
+  display: block;
+  width: 100%;
+  border: 0px;
+  color: #fff;
+  background-color: #555;
+  border-radius: 5px;
+  padding: 7px 0;
+}
+form h1 {
+  border: 2px solid red;
+  text-align: center;
 }
