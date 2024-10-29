@@ -8,7 +8,7 @@ function Header() {
         My Blog
       </a>
       <nav>
-        <a href="/login" className="">
+        <a href="/login" className="login">
           Login
         </a>
         <a href="/register">Register</a>
