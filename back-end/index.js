@@ -10,10 +10,14 @@ app.use(express.json());
 mongoose.connect(
   "mongodb+srv://vanthienpham734:Aa28121998@cluster0.rp80y.mongodb.net/"
 );
-app.post("/register", (req, res) => {
+app.post("/register", async (req, res) => {
   const { username, password } = req.body;
-  User.create();
-  res.json({ requestData: { username, password } });
+  try {
+    const UserDocument = await User.create({ username, password });
+    res.json(UserDocument);
+  } catch (e) {
+    res.status(400).json(e);
+  }
 });
 app.listen(4000);
 
